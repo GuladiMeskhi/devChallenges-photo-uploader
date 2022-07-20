@@ -1,0 +1,64 @@
+.loadingContainer {
+    width: 400px;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+  }
+  .loadingHeader {
+    font-style:normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+
+  .loadingBar {
+    height: 6px;
+    width: 341px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    margin-left: 30px;
+    position: relative;
+  }
+  .progressBar{
+      height: 6px;
+      width: 100px;
+      background: #2F80ED;
+      border-radius: 8px;
+      position: absolute;
+      top:0px;
+      left: 0px;
+      animation: progress 2s linear infinite;
+  }
+  @keyframes progress{
+      0%{
+          left:0px;
+          width: 0px;
+      }
+      25%{
+          left: 0px;
+          width: 100px;
+      }
+      50%{
+          left: 120.5px;
+          width: 100px;
+      }
+      75%{
+          left: 241px;
+          width: 100px;
+      }
+      100%{
+          left: 341px;
+          width: 0px;
+      }
+  }
